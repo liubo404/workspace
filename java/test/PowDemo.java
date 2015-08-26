@@ -1,0 +1,14 @@
+public class PowDemo{
+    public static void main(String[] args){
+	for(int i=0; i <= 10; i++){
+	    System.out.println(2^i);//Math.pow(2,i));
+	}
+	System.out.println("----1");
+	System.out.println( (1>>0)&1);
+	System.out.println("----2");
+	System.out.println((5>>2)&1);
+	int i = 0;
+	i = i | (1<<0);
+	System.out.println(i);
+    }
+}
