@@ -1,0 +1,17 @@
+#col1 .portletTitileWrap{
+    display: block;
+    margin: 0px 0px 0.5em;
+    font-size: 1em;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    padding: 0.2em 0px 0.2em 0.5em;
+    text-align: left;
+    color: rgb(75, 75, 75);
+    background-color: rgb(200, 200, 200);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(214, 214, 214)), color-stop(0.6, rgb(179, 179, 179)), to(rgb(176, 176, 176)));
+    border-bottom: 1px solid rgb(153, 153, 153);
+    clear: both;
+}
+
+.portletTitle .action a.tool-directurl {
+	      display:none;
+}
