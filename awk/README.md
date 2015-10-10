@@ -13,7 +13,7 @@ echo "the date is (Dec 2013)"|grep -Po '\(\K[^)]*'
  1040   grep --include=\*_zh_CN.properties -rnw '/home/abc/tools/bupt/sakai/tomcat7/webapps/' -e "\\\u7AD9\\\u70B9"
 
 
-'''bash
+```bash
  grep --include=\*_zh_CN.properties -rnwl . -e "\\\u7AD9\\\u70B9" |xargs sed -i 's/\\\u7AD9\\\u70B9/\\u8BFE\\u5802/g'
  grep --include=\*_zh_CN.properties -rnwl '/home/abc/tools/bupt/sakai/tomcat7/webapps/' -e "\\\u7AD9\\\u70B9" |xargs sed -i 's/\\\u7AD9\\\u70B9/\\u8BFE\\u5802/g'
-'''
+```
