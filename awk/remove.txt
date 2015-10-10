@@ -1,0 +1,42 @@
+sakai.portal.chat.loader
+edia.sakai.selector
+sakai.web.168
+sakai.rwiki
+sakai.emailtemplateservice
+sakai.memory
+sakai.su
+sakai.aliases
+sakai.basiclti
+sakai.basiclti.admin
+sakai.realtimeanswer
+sakai.archive                                 sakai-archive-tool
+sakai.gradebook.testservice                   sakai-gradebook-testservice
+sakai.profile2                                profile2-tool
+sakai.adminsiteperms                          adminsiteperms
+sakai.dropbox
+sakai.delegatedaccess.shopping
+sakai.podcasts
+sakai.accountvalidator                        accountvalidator
+sakai.news                                    sakai-news-tool
+sakai.summary.calendar
+sakai.iframe.service
+sakai.iframe.annotatedurl
+sakai.search                                  sakai-search-tool
+sakai.synoptic.messagecenter
+sakai.sections
+sakai.preferences                              sakai-user-tool-prefs
+sakai.usermembership                           sakai-usermembership-tool
+sakai.privacy
+sakai.messages                                 sakai-message-tool
+sakai.iframe.site
+sakai.sitebrowser
+sakai.sitestats                                     sitestats-tool
+sakai.motd
+sakai.metaobj
+sakai.courseware
+sakai.course
+sakai.coursetemplate
+sakai.lessonbuildertool                         lessonbuilder-tool
+sakai.mailbox
+sakai.test
+sakai.signup                                     sakai-signup-tool
