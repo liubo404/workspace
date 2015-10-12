@@ -1,2 +1,6 @@
 gen.site=\u8BFE\u5802
 
+access.site=\u6574\u4E2A\u8BFE\u5802
+gen.site=\u8BFE\u5802
+
+access.site=\u6574\u4E2A\u8BFE\u5802

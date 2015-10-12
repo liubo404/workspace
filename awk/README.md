@@ -19,5 +19,9 @@ echo "the date is (Dec 2013)"|grep -Po '\(\K[^)]*'
 ```
 
 to uppercase
+```
 str="some string"
 echo $str | awok '{print toupper($0)}'
+
+ grep --include=\*_zh_CN.properties -rnwl .  -e 'u7AD9\\u70B9'  |xargs sed -i 's/\\\u7AD9\\\u70B9/\\u8BFE\\u5802/g'
+```
