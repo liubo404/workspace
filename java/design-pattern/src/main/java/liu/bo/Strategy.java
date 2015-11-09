@@ -2,5 +2,5 @@ package liu.bo;
 
 
 public interface Strategy {
-    prublic int doOperation(int n1, int n2);
+    public int doOperation(int n1, int n2);
 }

@@ -1,1 +1,5 @@
 liu/bo/App.class
+liu/bo/OperationSubstract.class
+liu/bo/OperationAdd.class
+liu/bo/Strategy.class
+liu/bo/Context.class
