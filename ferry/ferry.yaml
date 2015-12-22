@@ -1,0 +1,10 @@
+  backend:
+          - storage:
+               personality: "gluster"
+               instances: 2
+            compute:
+               - personality: "yarn"
+               instances: 2
+  connectors:
+       - personality: "hadoop-client"
+       name: "control-0"

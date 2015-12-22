@@ -7,6 +7,9 @@ grep -i ignore case sensitive
 sudo lsof -iTCP -sTCP:LISTEN | grep mongo
 
 netstat -an
+sudo lsof -iTCP -sTCP:LISTEN | grep mongo
+
+netstat -an
 
 
 '''
