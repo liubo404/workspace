@@ -3,12 +3,32 @@
 </head>
 
 <body>
-  <h1>Lending Library</h1>
 
-  {{> hello}}
+
+
+
+  <div id="categories-container" class="container">
+    {{> categories}}
+    </div>
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
+
+<template name="categories">
+  <h1 class="title">categories</h1>
+  <div id="categories" class="btn-group">
+    {{#if new_cat}}
+    <div class="category form-group" id="newCat">
+      <input type="text" id="add-category" class="form-control" value="" />
+      </div>
+    {{else}}
+    <div class="category btn btn-primary" id="btnNewCat">
+      <span class="glyphicon glyphicon-plus"></span>
+    </div>
+    {{/if}}
+    {{#each lists}}
+    <div class="category btn btn-primary">
+      {{Category}}
+    </div>
+    {{/each}}
+  </div>
+  </template>
