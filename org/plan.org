@@ -1,0 +1,30 @@
+* WEBSITE
+* 
+* TODO static file server distributed
+* TODO session distributed mamagement
+* TODO user priviledges management
+* TODO cache distributed 
+* 
+* 
+* 
+* 
+* 
+* Tasks
+** DONE start new org file for tutorial
+   CLOSED: [2016-07-19 二 11:04]
+** DONE outline document
+   CLOSED: [2016-07-19 二 11:05]
+** TODO write introduction 
+
+* Introduction 
+** obtaining org-mode 
+** 
+** 
+** 
+* 
+* 
+* 
+* 
+* 
+** sdfa
+*** asdf
