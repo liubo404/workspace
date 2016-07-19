@@ -1,0 +1,103 @@
+* SHIRO COMPONENTS
+** SecurityManager
+   Typically a facade pattern, provide services outside.
+** Authenticator
+   Who are you?
+** Authorizer
+   Who can do what?
+   Who can do which action?
+   Realm:subject(user),user group, role, permission
+** Session Manager
+
+
+* MODEL
+** Sujbect
+   user
+** Principal
+   user id:username
+** Role and Permission
+   privileges
+** Realm
+   executing authentication and authorization
+
+ 
+* RULES of definde Role and Permission
+** role dynamic, no real content
+** permission: fixed
+** permssion can dynamic, but complex and difficult to do
+
+ 
+
+
+
+* 
+
+* CONCEPT
+
+** AuthenticationToken (username and password)
+   used before authentication
+** AuthenticationInfo (username and password)
+   after authentication
+** RememberMe
+** Credentials
+   certificate,mostly is password, need crypton
+** CredentialsMacher
+   compare user login certificate with the cryptoned certificate
+** PAM pluggable authentication modules
+   =Realm + certification strategy
+   strategy:AllSuccessful,AtLeastOneSuccessful,FirstSuccessful
+** AuthorizationInfo
+   =Realm + Permission
+** TODO PermissionResolver
+   "String" --> PermissionResolver --> Permission
+   AllPermission?
+   WildcardPermission
+** TODO Permission Compare
+   actually string compare, especially 
+** Realm
+   application related component.
+   JdbcRealm --> AuthorizingRealm --> AuthenticatingRealm --> CachingRealm ->Realm
+** Session
+   related to the context of a Subject. 
+   is independent, env-unrelated.
+   shiro's WebSession directly use HttpSession
+** SecurityManager
+   facade interface. = Authenticator + Authorizer + SessionFactory.
+   via extending to extend functionality.
+   DefaultWebSecurityManager
+** Filter
+   the de facto of web application use the filter to authentication and authorization.
+   use master filter to cover many children filters.
+   web.xml just configur JSecurityFilter
+   spring SpringJSecurityFilter
+   children filter: order related,top -> down, left -> rigth
+   escape the delimiter in configuration.
+** Subject
+   user
+   facade, delegate to SecurityManager
+** Configuration
+   configure all above to create the SecurityManager. default file type is ini.
+   JSecurityFilter --create->Configuration --create->SecurityManager <--use- Realm
+   <--CredentialsMatcher
+   <--permissionResolver
+*** JSecurityFilter create Configuration instance, pass ini file to Configuration.
+    Spring:SpringJSecurity and SpringIniWebConfiguration.
+*** Configuration actually is the Factory of SecurityManager.
+    For SpringIniWebConfiguration, it need to know SecurityManager's BeanName,
+    it depends the SpringJSecurityFilter's init paramter "securityManagerBeanName"
+*** SpringJSecurityFilter has two paramer
+    config: ini file content
+    securityManagerBeanName
+** SecurityUtils
+   tools to get Subject and SecurityManager easily
+** Mis
+*** AOP
+*** Cache
+*** Codec
+*** Crypto
+*** IO
+*** JNDI
+*** util
+*** Tags
+** 
+
