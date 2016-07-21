@@ -99,5 +99,9 @@
 *** JNDI
 *** util
 *** Tags
-** 
+**
 
+ 
+* U S A G E
+* TODO configure with spring
+* 

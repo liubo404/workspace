@@ -1,0 +1,10 @@
+* USAGE
+* integration with springmvc
+** DONE add shior filter to web.xml
+   CLOSED: [2016-07-21 四 19:25]
+** DONE saparate shiro-config.xml 
+   CLOSED: [2016-07-21 四 19:25]
+** TODO jdbc realm
+** TODO login/logout pages
+** TODO user role permission table design
+** TODO apply previlege control ACL in web page,controller,method
