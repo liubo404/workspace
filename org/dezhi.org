@@ -1,0 +1,8 @@
+* COURSE Classification type
+* grade
+* subject
+* type
+* version
+* query
+* TODO course knowledge tree 
+
